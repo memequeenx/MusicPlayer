@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Music Player</title>
+		
+		<!-- CSS -->
+		<link href="assets/CSS/style.css" rel="stylesheet" type="text/css">
+		
+		<!-- Font -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800,900" rel="stylesheet">
+		
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+		
+		<!-- JavaScript -->
+		<script src="assets/JS/script.js"></script>
+		
+	</head>
+
+	<body>
+		<!-- Header Desktop -->
+		<header id="header-desktop">
+
+			<!-- Logo -->
+			<i class="logo-icon fab fa-foursquare"></i>
+			<h1 class="logo">FENT<span class="light">MUSIC</span></h1>
+			
+			<!-- Searchbar -->
+			<div class="search-desktop">
+				<form>
+					<input class="searchbar-desk" type="search" placeholder="Search for your favorite songs...">
+				</form>
+			</div>
+			
+			<!-- Search Icon -->
+			<i class="search-icon fas fa-search" onclick="searchbar()"></i>
+			<i class="search-icon-desk fas fa-search"></i>
+			
+		</header>
+		
+		<!-- Header Mobile -->
+		<header id="header-mobile">
+			
+			<!-- Hamburger Icon -->
+			<div id="nav-icons">
+				<i class="nav-icon fas fa-bars" onclick="sidebar()"></i>
+			</div>
+			
+			<!-- Logo -->
+			<h1 class="logo">FENT<span class="light">MUSIC</span></h1>
+			
+			<!-- Search Icon -->
+			<i class="search-icon fas fa-search" onclick="searchbar()"></i>
+			
+		</header>
+		
+		<!-- Sidebar Desktop -->
+			<div id="sidebar-desktop-icons">
+					<a href>
+						<div class="menu-buttons">
+							<i class="menu-icons fas fa-home"></i>
+							<div class="icon-names">Home</div>
+						</div>
+					</a>
+				<a href>
+					<div class="menu-buttons">
+						<i class="menu-icons fas fa-music"></i>
+						<div class="icon-names">Playlists</div>
+					</div>
+				</a>
+				<a href>
+					<div class="menu-buttons">
+						<i class="menu-icons fas fa-compact-disc"></i>
+						<div class="icon-names">Songs</div>
+					</div>
+				</a>
+				<a href>
+					<div class="menu-buttons">
+						<i class="menu-icons fas fa-user"></i>
+						<div class="icon-names">Profile</div>
+					</div>
+				</a>	
+				<a href>
+					<div class="menu-buttons">
+						<i class="menu-icons fas fa-cog"></i>
+						<div class="icon-names">Settings</div>
+					</div>
+				</a>		
+			</div>
+		
+		<main id="main">
+			
+			<!-- Searchbar -->
+			<div id="searchbar">
+				<form>
+					<input type="search" placeholder="Search for your favorite songs..." class="search-form">
+				</form>
+			</div>
+			
+			<!-- Sidebar Mobile -->
+			<div id="sidebar-mobile">
+				<ul>
+					<hr>
+					<a href>
+						<li class="menu-buttons">
+							<i class="menu-icons fas fa-home"></i>
+							<p class="icon-names">Home</p>
+						</li>
+					</a>
+					<hr>
+					<a href>
+						<li class="menu-buttons">
+							<i class="menu-icons fas fa-music"></i>
+							<p class="icon-names">Playlists</p>
+						</li>
+					</a>
+					<hr>
+					<a href>
+						<li class="menu-buttons">
+							<i class="menu-icons fas fa-compact-disc"></i>
+							<p class="icon-names">Songs</p>
+						</li>
+					</a>
+					<hr>
+					<a href>
+						<li class="menu-buttons">
+							<i class="menu-icons fas fa-user"></i>
+							<p class="icon-names">Profile</p>
+						</li>
+					</a>
+					<hr>
+					<a href>
+						<li class="menu-buttons">
+							<i class="menu-icons fas fa-cog"></i>
+							<p class="icon-names">Settings</p>
+						</li>
+					</a>
+					<hr>
+				</ul>
+			</div>
+			
+			<!-- Recommended -->
+			<h2 class="categories">Recommended for you</h2>
+			
+			<!-- Album Covers -->
+			<section class="x-scroll">
+				<div class="cover-align">
+					<figure class="align">
+						<img src="assets/Images/Signature-Cover.jpg" class="album-covers" alt=""/>
+						<figcaption><span class="bold">Signature</span><br>Tiffany Smith</figcaption>
+					</figure>
+					<figure class="align">
+						<img src="assets/Images/Dream-Catcher-Cover.jpg" class="album-covers" alt=""/>
+						<figcaption><span class="bold">Dream Catcher</span><br>Marc Lays</figcaption>
+					</figure>
+					<figure class="align">
+						<img src="assets/Images/Minimalist-Cover.jpg" class="album-covers" alt=""/>
+						<figcaption><span class="bold">Minimalist</span><br>Regina Phalange</figcaption>
+					</figure>
+					<figure class="align">
+						<img src="assets/Images/Alternate-Reality-Cover.jpg" class="album-covers" alt=""/>
+						<figcaption><span class="bold">Alternate Reality</span><br>Mia Spikes</figcaption>
+					</figure>
+					<figure class="align">
+						<img src="assets/Images/Sky-Cover.jpg" class="album-covers" alt=""/>
+						<figcaption><span class="bold">Sky</span><br>Mika McDoller </figcaption>
+					</figure>
+				</div>
+			</section>
+			
+			<!-- Popular Playlists -->
+			<h2 class="categories">Popular Playlists</h2>
+			
+			<!-- Album Covers -->
+			<section class="x-scroll">
+				<div class="cover-align">
+					<figure class="align">
+						<img src="assets/Images/Hip-Hop-Cover.jpg" class="album-covers" alt=""/>
+						<figcaption><span class="bold">90's Hip Hop</span></figcaption>
+					</figure>
+					<figure class="align">
+						<img src="assets/Images/Electric-Cover.jpg" class="album-covers" alt=""/>
+						<figcaption><span class="bold">New Wave</span></figcaption>
+					</figure>
+					<figure class="align">
+						<img src="assets/Images/Karaoke-Cover.jpg" class="album-covers" alt=""/>
+						<figcaption><span class="bold">Karaoke</span></figcaption>
+					</figure>
+					<figure class="align">
+						<img src="assets/Images/Kids-Songs-Cover.jpg" class="album-covers" alt=""/>
+						<figcaption><span class="bold">Kids Songs</span></figcaption>
+					</figure>
+					<figure class="align">
+						<img src="assets/Images/Super-Hits-Cover.jpg" class="album-covers" alt=""/>
+						<figcaption><span class="bold">Disco Divas</span></figcaption>
+					</figure>
+				</div>
+			</section>
+			
+			<!-- Category Boxes -->
+			<h2 class="categories">Categories</h2>
+			<section class="wrapper">
+				<div class="box">
+					<p>Charts</p>
+				</div>
+				<div class="box">
+					<p>Podcasts</p>
+				</div>
+				<div class="box">
+					<p>Videos</p>
+				</div>
+				<div class="box">
+					<p>Concerts</p>
+				</div>
+				<div class="box">
+					<p>Party</p>
+				</div>
+				<div class="box">
+					<p>Chill</p>
+				</div>
+				<div class="box">
+					<p>Gaming</p>
+				</div>
+				<div class="box">
+					<p>Travel</p>
+				</div>
+				<div class="box">
+					<p>Festivals</p>
+				</div>
+				<div class="box">
+					<p>Unplugged</p>
+				</div>
+				<div class="box">
+					<p>Instrumentals</p>
+				</div>
+				<div class="box">
+					<p>Movies</p>
+				</div>
+			</section>
+			
+		</main>
+		
+		<!-- Music Player -->
+		<footer id="player">
+			<div id="play-button">
+				<i class="play-button fas fa-play"></i>
+			</div>
+			<div class="music-info">
+				<p><span class="bold">No Time &bull;</span> DJ MasterCreed</p>
+			</div>
+			<div id="album-cover"></div>
+			<hr class="timeline">
+		</footer>
+		
+	</body>
+</html>
